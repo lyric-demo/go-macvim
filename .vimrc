@@ -4,6 +4,7 @@ set tabstop=4
 
 "配色显示
 colorscheme molokai 
+set guifont=Hack:h14
 
 set backspace=2              " 设置退格键可用
 set autoindent               " 自动对齐
@@ -44,6 +45,9 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'elzr/vim-json'
 Plugin 'markcornick/vim-vagrant'
 Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'majutsushi/tagbar'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
