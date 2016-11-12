@@ -10,7 +10,7 @@ set backspace=2              " 设置退格键可用
 set autoindent               " 自动对齐
 set ai!                      " 设置自动缩进
 set smartindent              " 智能自动缩进
-set relativenumber           " 开启相对行号
+" set relativenumber           " 开启相对行号
 set nu!                      " 显示行号
 set ruler                    " 右下角显示光标位置的状态行
 set incsearch                " 开启实时搜索功能
@@ -47,8 +47,36 @@ Plugin 'markcornick/vim-vagrant'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree' 
+Plugin 'tpope/vim-fugitive'
+Plugin 'raimondi/delimitmate'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'maksimr/vim-jsbeautify'
 
 call vundle#end()
 
 filetype plugin indent on
+
+" key map
+map <c-n><c-t> :NERDTreeToggle<cr>
+
+
+" for golang
+autocmd FileType go noremap <buffer> <c-g><c-t> :TagbarToggle<cr>
+autocmd FileType go noremap <buffer> <c-g><c-b> :GoBuild<cr>
+autocmd FileType go noremap <buffer> <c-g><c-h> :GoDoc<cr>
+autocmd FileType go noremap <buffer> <c-g><c-p> :GoDefPop<cr>
+autocmd FileType go noremap <buffer> <c-g><c-d> :GoDef<cr>
+autocmd FileType go noremap <buffer> <c-g><c-i> :GoImports<cr>
+autocmd FileType go noremap <buffer> <c-g><c-r> :GoReferrers<cr>
+
+" for javascript
+autocmd FileType javascript noremap <buffer>  <c-j><c-f> :call JsBeautify()<cr>
+" for json
+autocmd FileType json noremap <buffer> <c-j><c-f> :call JsonBeautify()<cr>
+" for jsx
+autocmd FileType jsx noremap <buffer> <c-j><c-f> :call JsxBeautify()<cr>
+" for html
+autocmd FileType html noremap <buffer> <c-j><c-f> :call HtmlBeautify()<cr>
+" for css or scss
+autocmd FileType css noremap <buffer> <c-j><c-f> :call CSSBeautify()<cr>
