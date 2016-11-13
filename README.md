@@ -1,8 +1,10 @@
 # mac下使用vim配置golang开发环境
 
+![screenshot](https://raw.githubusercontent.com/LyricTian/vim/master/screenshots/screenshot.png)
+
 ## 依赖工具
 
-* [macvim](https://github.com/macvim-dev/macvim/releases/tag/snapshot-114)
+* [macvim](https://github.com/macvim-dev/macvim/releases)
 
 ## 获取vim配置文件
 
@@ -18,16 +20,17 @@ $ ln -sf $HOME/vim/.vimrc $HOME/.vimrc
 :PluginInstall
 ```
 
-### 安装vim-go依赖包
+### 安装(更新)vim-go依赖包
 
 ```
 # 安装依赖
 :GoInstallBinaries
-# 或更新依赖
+# 更新依赖
 :GoUpdateBinaries
 ```
 
 ### 编译YCM
+> 详细说明请查看（[http://valloric.github.io/YouCompleteMe/](http://valloric.github.io/YouCompleteMe/)）
 
 ``` bash
 $ cd $HOME/.vim/bundle/YouCompleteMe
