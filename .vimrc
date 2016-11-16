@@ -52,6 +52,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'raimondi/delimitmate'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'maksimr/vim-jsbeautify'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 

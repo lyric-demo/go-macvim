@@ -1,4 +1,4 @@
-# mac下使用vim配置golang开发环境
+# vim配置golang开发环境
 
 ![screenshot](https://raw.githubusercontent.com/LyricTian/vim/master/screenshots/screenshot.png)
 
