@@ -2,11 +2,12 @@
 
 ![screenshot](https://raw.githubusercontent.com/LyricTian/vim/master/screenshots/screenshot.png)
 
-## 依赖工具
+## 准备
 
-* [macvim](https://github.com/macvim-dev/macvim/releases)
+* [macvim](https://github.com/macvim-dev/macvim)
+* [Hack字体](https://github.com/chrissimpkins/Hack)
 
-## 获取vim配置文件
+## 获取配置
 
 ``` bash
 $ git clone --recursive https://github.com/LyricTian/vim.git $HOME/vim

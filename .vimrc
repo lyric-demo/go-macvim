@@ -3,7 +3,7 @@ set shiftwidth=4
 set tabstop=4
 
 "配色显示
-colorscheme molokai 
+colorscheme molokai
 set guifont=Hack:h14
 
 set backspace=2              " 设置退格键可用
@@ -53,6 +53,7 @@ Plugin 'raimondi/delimitmate'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'vim-airline/vim-airline'
+Plugin 'simon-xia/vim-qlang'
 
 call vundle#end()
 
