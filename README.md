@@ -4,45 +4,11 @@
 
 ## 准备
 
-* [macvim](https://github.com/macvim-dev/macvim)
-* [Hack字体](https://github.com/chrissimpkins/Hack)
+### 安装依赖
 
-## 获取配置
-
-``` bash
-$ git clone --recursive https://github.com/LyricTian/vim.git $HOME/vim
-$ ln -sf $HOME/vim/.vim $HOME/.vim
-$ ln -sf $HOME/vim/.vimrc $HOME/.vimrc
-```
-
-## 安装插件
-
-```
-:PluginInstall
-```
-
-### 安装(更新)vim-go依赖包
-
-```
-# 安装依赖
-:GoInstallBinaries
-# 更新依赖
-:GoUpdateBinaries
-```
-
-### 编译YCM
-> 详细说明请查看（[http://valloric.github.io/YouCompleteMe/](http://valloric.github.io/YouCompleteMe/)）
-
-``` bash
-$ cd $HOME/.vim/bundle/YouCompleteMe
-$ ./install.py --gocode-completer
-```
-
-### 安装ctags
-
-``` bash
-$ brew install ctags
-```
+- [Hack字体](https://github.com/chrissimpkins/Hack)
+- [macvim](https://github.com/macvim-dev/macvim)
+- `brew install cmake ctags`
 
 ### 配置`macvim`的环境变量
 
@@ -60,11 +26,47 @@ export PATH="$GOROOT/bin:$GOPATH/bin":$PATH
 alias ctags="`brew --prefix`/bin/ctags"
 ```
 
+## 配置
+
+``` bash
+$ git clone --recursive https://github.com/LyricTian/vim.git $HOME/vim
+$ ln -sf $HOME/vim/.vim $HOME/.vim
+$ ln -sf $HOME/vim/.vimrc $HOME/.vimrc
+```
+
+### 运行macvim
+
+```
+$ mvim
+```
+
+### 安装插件
+
+```
+:PluginInstall
+```
+
+### 安装vim-go依赖工具
+> 更新工具使用`:GoUpdateBinaries`
+
+```
+:GoInstallBinaries
+```
+
+### 编译YCM
+> 详细说明（[http://valloric.github.io/YouCompleteMe/](http://valloric.github.io/YouCompleteMe/)）
+
+``` bash
+$ cd $HOME/.vim/bundle/YouCompleteMe
+$ ./install.py --gocode-completer
+```
+
 ## 快捷键配置
 
 ```
-" key map
+" for tools
 map <c-n><c-t> :NERDTreeToggle<cr>
+map <c-t><c-t> :TagbarToggle<cr>
 
 
 " for golang
@@ -78,14 +80,19 @@ autocmd FileType go noremap <buffer> <c-g><c-r> :GoReferrers<cr>
 
 " for javascript
 autocmd FileType javascript noremap <buffer>  <c-j><c-f> :call JsBeautify()<cr>
+
 " for json
 autocmd FileType json noremap <buffer> <c-j><c-f> :call JsonBeautify()<cr>
+
 " for jsx
 autocmd FileType jsx noremap <buffer> <c-j><c-f> :call JsxBeautify()<cr>
+
 " for html
 autocmd FileType html noremap <buffer> <c-j><c-f> :call HtmlBeautify()<cr>
+
 " for css or scss
 autocmd FileType css noremap <buffer> <c-j><c-f> :call CSSBeautify()<cr>
+
 ```
 
 ## MIT License

@@ -59,12 +59,12 @@ call vundle#end()
 
 filetype plugin indent on
 
-" key map
+" for tools
 map <c-n><c-t> :NERDTreeToggle<cr>
+map <c-t><c-t> :TagbarToggle<cr>
 
 
 " for golang
-autocmd FileType go noremap <buffer> <c-g><c-t> :TagbarToggle<cr>
 autocmd FileType go noremap <buffer> <c-g><c-b> :GoBuild<cr>
 autocmd FileType go noremap <buffer> <c-g><c-h> :GoDoc<cr>
 autocmd FileType go noremap <buffer> <c-g><c-p> :GoDefPop<cr>
