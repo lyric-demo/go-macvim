@@ -1,4 +1,4 @@
-# vim配置golang开发环境
+# vim-go
 
 ![screenshot](https://raw.githubusercontent.com/LyricTian/vim/master/screenshots/screenshot.png)
 
@@ -26,7 +26,7 @@ export PATH="$GOROOT/bin:$GOPATH/bin":$PATH
 alias ctags="`brew --prefix`/bin/ctags"
 ```
 
-## 配置
+## 安装
 
 ``` bash
 $ git clone --recursive https://github.com/LyricTian/vim.git $HOME/vim
