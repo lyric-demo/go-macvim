@@ -54,6 +54,9 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'vim-airline/vim-airline'
 Plugin 'simon-xia/vim-qlang'
+Plugin 'cespare/vim-toml'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
