@@ -74,6 +74,7 @@ autocmd FileType go noremap <buffer> <c-g><c-p> :GoDefPop<cr>
 autocmd FileType go noremap <buffer> <c-g><c-d> :GoDef<cr>
 autocmd FileType go noremap <buffer> <c-g><c-i> :GoImports<cr>
 autocmd FileType go noremap <buffer> <c-g><c-r> :GoReferrers<cr>
+autocmd FileType go noremap <buffer> <c-g><c-m> :GoMetaLinter<cr>
 
 " for javascript
 autocmd FileType javascript noremap <buffer>  <c-j><c-f> :call JsBeautify()<cr>
