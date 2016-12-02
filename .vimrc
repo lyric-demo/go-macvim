@@ -56,7 +56,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'simon-xia/vim-qlang'
 Plugin 'cespare/vim-toml'
 Plugin 'kien/ctrlp.vim'
-Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
@@ -75,6 +74,8 @@ autocmd FileType go noremap <buffer> <c-g><c-d> :GoDef<cr>
 autocmd FileType go noremap <buffer> <c-g><c-i> :GoImports<cr>
 autocmd FileType go noremap <buffer> <c-g><c-r> :GoReferrers<cr>
 autocmd FileType go noremap <buffer> <c-g><c-m> :GoMetaLinter<cr>
+autocmd FileType go noremap <buffer> <c-g><c-v> :GoVet<cr>
+autocmd FileType go noremap <buffer> <c-g><c-l> :GoLint<cr>
 
 " for javascript
 autocmd FileType javascript noremap <buffer>  <c-j><c-f> :call JsBeautify()<cr>
@@ -86,3 +87,4 @@ autocmd FileType jsx noremap <buffer> <c-j><c-f> :call JsxBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-j><c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-j><c-f> :call CSSBeautify()<cr>
+
